@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TulosAktiviteetti">
+
+    <TextView
+        android:id="@+id/promilleTeksti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/purple_500"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/palamisAikaTeksti"
+        app:layout_constraintStart_toStartOf="@+id/palamisAikaTeksti"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Alkoholin määrä veressä:"
+        app:layout_constraintBottom_toTopOf="@+id/promilleTeksti"
+        app:layout_constraintEnd_toEndOf="@+id/promilleTeksti"
+        app:layout_constraintStart_toStartOf="@+id/promilleTeksti"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753" />
+
+    <TextView
+        android:id="@+id/palamisaikaTeksti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/purple_500"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/palamisAikaTeksti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Alkoholin palamiseen kuluu aikaa:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/palamisaikaTeksti"
+        app:layout_constraintStart_toStartOf="@+id/palamisaikaTeksti"
+        app:layout_constraintTop_toBottomOf="@+id/promilleTeksti"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="90dp"
+        android:text="HUOM! Alkoholin palamisessa ja toleranssissa voi olla yksilöllisiä eroja. Tämä sovellus on vain suuntaa antava eikä sitä voi siten käyttää muuhun kuin viihdekäyttöön."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palamisaikaTeksti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
